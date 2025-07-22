@@ -32,4 +32,5 @@ sales += cafemochas * cafemocha_price
 # 총 매출 출력
 print("총 매출은", sales, "입니다.")
 
+
 ---
