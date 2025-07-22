@@ -10,7 +10,7 @@ sum = x + y
 # 결과 출력: x, y의 값과 그 합을 출력 
 print(x, "과", y, "의 합은", sum, "입니다.")
 
----
+ㅡㅡㅡ
 
 ## 2. 카페 매출 계산하기
 
@@ -31,3 +31,5 @@ sales += cafemochas * cafemocha_price
 
 # 총 매출 출력
 print("총 매출은", sales, "입니다.")
+
+ㅡㅡㅡ
