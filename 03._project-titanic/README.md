@@ -28,7 +28,8 @@
 
 ### 🎯 SHAP 개별 예측 사례 (Force plot)
 
-![SHAP Force plot](https://github.com/user-attachments/assets/force_plot_sample)
+![image" src="https://github.com/user-attachments/assets/8b28a413-e6fc-46e9-9145-a7e44278d899)
+
 
 - 특정 승객이 생존한 이유를 시각적으로 보여줌
 - 빨간색: 생존 확률을 **높인** 요인
