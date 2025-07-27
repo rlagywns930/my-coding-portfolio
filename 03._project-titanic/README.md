@@ -28,7 +28,7 @@
 
 ### 🎯 SHAP 개별 예측 사례 (Force plot)
 
-![image" src="https://github.com/user-attachments/assets/8b28a413-e6fc-46e9-9145-a7e44278d899)
+![image](https://github.com/user-attachments/assets/8b28a413-e6fc-46e9-9145-a7e44278d899)
 
 
 - 특정 승객이 생존한 이유를 시각적으로 보여줌
