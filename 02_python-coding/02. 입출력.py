@@ -1,19 +1,19 @@
-## 카페 매출 계산하기
+## 로봇 기자 만들기
 
-# 각 음료들의 가격 설정
-americano_price = 2000
-cafelatte_price = 3000
-cafemocha_price = 3500
+# input을 이용해 사용자로부터 정보를 입력받는다
+stadium = input("경기장은 어디입니까? : ")
+winner = input("이긴팀은 어디입니까? : ")
+loser = input("진 팀은 누구이니까? : ")
+player = input("우수선수는 누구입니까? : ")
+score = input("스코어는 몇대몇입니까? : ")
 
-# 판매된 음료들의 개수를 사용자로부터 입력받음
-americanos = int(input("아메리카노 판매 개수: "))
-cafelattes = int(input("카페라떼 판매 개수: "))
-cafemochas = int(input("카페모카 판매 개수: "))
+# 줄바꿈
+print("")
 
-# 총 매출 계산
-sales = americanos * americano_price
-sales += cafelattes * cafelatte_price
-sales += cafemochas * cafemocha_price
-
-# 총 매출 출력
-print("총 매출은", sales, "입니다.")
+# 결과 출력
+print("===============================================")
+print("오늘", stadium,"에서 야구 경기가 열렸습니다.")
+print(winner,"과", loser, "은 치열한 공방전을 펼쳤습니다.")
+print(player, "이 맹활약을 하였습니다.")
+print("결국", winner,"가", loser,"을", score,"로 이겼습니다.")
+print("===============================================")
