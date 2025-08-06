@@ -89,7 +89,7 @@
 
 4. **모델 실행**  
    ```bash
-   python water_level_prediction.py
+   02. 수위에측_LSTM_모델.py
 5. **예측 결과 확인**
    - 시각화 그래프 및 오차 분석 결과 출력
 
