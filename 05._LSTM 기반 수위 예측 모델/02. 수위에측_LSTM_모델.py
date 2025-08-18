@@ -107,8 +107,23 @@ def train_and_predict_lstm(csv_path='experiment_data.csv', reference_time=70.0, 
 
         # 그래프 출력
         plt.figure(figsize=(8, 4))
-        plt.plot(range(len(y)), y, 'bo-', label='실제 총 시간')
-        plt.plot(len(y), predicted_time, 'ro', label='예측값 (현재 입력 기반)')
+
+        # x축 1부터 시작
+        x_actual = np.arange(1, len(y) + 1)
+
+        # 실제 총 시간 (파란 점)
+        plt.plot(x_actual, y, 'bo-', label='실제 총 시간')
+
+        # 마지막 실험 실제값 초록색 점
+        plt.plot(x_actual[-1], y[-1], 'go', label='마지막 실험 실제값')
+
+        # 예측값 위치: 마지막 실험 번호 + 0.5
+        x_pred = x_actual[-1] + 0.5
+        plt.plot(x_pred, predicted_time, 'ro', label='예측값 (현재 입력 기반)')
+
+        # x축 레이블에 '예측값' 추가
+        plt.xticks(list(x_actual) + [x_pred], list(map(str, x_actual)) + ['예측값'])
+
         plt.axhline(reference_time, color='k', linestyle='--', label='기준값 70초')
         plt.xlabel("실험 번호")
         plt.ylabel("총 소요 시간 (초)")
