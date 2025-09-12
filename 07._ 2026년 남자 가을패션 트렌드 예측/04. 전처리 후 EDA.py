@@ -1,4 +1,4 @@
-# 1. [전처리 후 데이터 구조, 결측치, 중복치 확인]
+1. [전처리 후 데이터 구조, 결측치, 중복치 확인]
 
 import pandas as pd
 
@@ -20,7 +20,7 @@ print("🔁 [3] 중복 데이터 확인:")
 print(f"중복된 행 수: {df.duplicated().sum()}")
 ---
 
-# 2. [그룹별 워드클라우드]
+2. [그룹별 워드클라우드]
 
 import pandas as pd
 from wordcloud import WordCloud
@@ -85,7 +85,7 @@ def draw_group_wordcloud(df, group_col='group', text_col='clean_description'):
 draw_group_wordcloud(df)
 ---
 
-# 3. [그룹간 상관관계 분석]
+3. [그룹간 상관관계 분석]
 
 import pandas as pd
 import numpy as np
@@ -136,7 +136,7 @@ plt.tight_layout()
 plt.show()
 ---
 
-# 4. [그룹별 키워드 분포 비교]
+4. [그룹별 키워드 분포 비교]
 
 import pandas as pd
 import matplotlib.pyplot as plt
