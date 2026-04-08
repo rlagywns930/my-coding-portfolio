@@ -7,6 +7,15 @@
 
 ## 🚀 주요 프로젝트 소개
 
+### 👔 2026년 남성 가을 패션 트렌드 예측 (NLP)
+- **네이버 블로그 API** 기반 비정형 텍스트 데이터 수집 및 정제
+- **KoNLPy(Okt) & TF-IDF**를 활용한 형태소 분석 및 키워드 벡터화
+- **LDA(Latent Dirichlet Allocation)** 토픽 모델링을 통한 잠재 트렌드 추출
+- **XGBoost & Random Forest** 기반의 다중 분류 모델링 및 하이퍼파라미터 최적화
+- **주요 성과:** 최적화를 통해 XGBoost 모델의 Accuracy를 **24.7% → 29.0%**로 개선 (수백 개의 키워드 분류 태스크)
+
+---
+
 ### 🚢 Titanic 생존자 예측 프로젝트
 - Titanic 데이터셋 기반으로 생존 여부를 예측하는 분류 모델 개발
 - **EDA → Feature Engineering → 모델링 → 결과 해석(SHAP)** 전 과정을 수행
@@ -29,7 +38,6 @@
 - **XGBoost 모델 활용 → RMSLE 기준 성능 개선**
   - Train RMSLE: **0.1116**
   - Kaggle 점수: **0.13741**
-- 예측 결과 해석 및 향후 개선 방안 제시
 
 ---
 
@@ -44,35 +52,37 @@
 | 분야 | 도구 및 라이브러리 |
 |------|------------------|
 | 언어 및 환경 | Python, Jupyter Notebook |
-| 데이터 처리 | Pandas, NumPy |
-| 시각화 | Matplotlib, Seaborn |
-| 머신러닝 | Scikit-learn, XGBoost, Random Forest |
+| 데이터 처리 | Pandas, NumPy, BeautifulSoup |
+| 자연어 처리 | **KoNLPy (Okt), TF-IDF, LDA Topic Modeling** |
+| 시각화 | Matplotlib, Seaborn, **WordCloud** |
+| 머신러닝 | Scikit-learn, **XGBoost**, Random Forest |
 | 딥러닝 | TensorFlow, Keras (LSTM) |
-| 모델 해석 | SHAP |
-| 하이퍼파라미터 튜닝 | GridSearchCV |
+| 모델 최적화/해석 | GridSearchCV, SHAP |
 | 협업 및 문서화 | Git, GitHub, Markdown |
 
 ---
 
 ## 📁 폴더 구성
 
-| 폴더명                           | 내용                                 |
+| 폴더명 | 내용 |
 |----------------------------------|--------------------------------------|
-| `01._theory`                     | 데이터 분석 기초 이론 정리                |
-| `02_python-coding`              | 기본 실습용 코드 정리                 |
-| `03._project-titanic`           | Titanic 생존자 예측 프로젝트 (V1, V2)   |
-| `04._project_titanic2`          | Titanic 예측 프로젝트 확장 버전            |
-| `05._LSTM 기반 수위 예측 모델`       | 센서 기반 시계열 데이터 + LSTM 예측 프로젝트 |
-| `06._project_house_prices`      | House Price 회귀 예측 프로젝트             |
+| `01._theory` | 데이터 분석 기초 이론 정리 |
+| `02_python-coding` | 기본 실습용 코드 정리 |
+| `03._project-titanic` | Titanic 생존자 예측 프로젝트 (V1, V2) |
+| `04._project_titanic2` | Titanic 예측 프로젝트 확장 버전 |
+| `05._LSTM 기반 수위 예측 모델` | 센서 기반 시계열 데이터 + LSTM 예측 프로젝트 |
+| `06._project_house_prices` | House Price 회귀 예측 프로젝트 |
+| **`07._2026년 남자 가을 패션 트렌드`** | **네이버 API 데이터 기반 트렌드 예측 프로젝트 (NLP)** |
 
 ---
 
 ## 🎯 이런 점에 집중했습니다
 
-- **데이터 기반 문제 해결**을 위한 전 과정 실습 경험  
+- **데이터 기반 문제 해결**을 위한 전 과정(End-to-End) 실습 경험  
+- **비정형 데이터 처리:** API 수집부터 형태소 분석, 토픽 모델링까지의 NLP 파이프라인 구축  
 - 단순한 모델 적용이 아닌, **데이터 이해 → 전처리 → 모델링 → 해석 → 개선안 제시**까지 전 과정 수행  
-- **SHAP, RMSLE, Optuna 등** 다양한 분석 기법과 평가지표 활용  
-- 결과의 **정량적 근거를 바탕으로 한 해석 능력** 강화  
+- **SHAP, RMSLE, LDA 등** 다양한 분석 기법과 도메인에 맞는 평가지표 활용  
+- 결과의 **정량적 근거를 바탕으로 한 인사이트 도출 능력** 강화  
 
 ---
 
